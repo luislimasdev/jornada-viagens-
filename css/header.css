@@ -1,33 +1,32 @@
-.main-header {
+header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
-  position: relative;
 }
 
 .logo {
-  display: inline-block;
+  display: inline;
   width: 68px;
   height: 64px;
+  margin: 37px 0 0 48px;
 }
 
-.img-mobile {
+.logo-mobile {
   display: block;
 }
-
-.img-desktop {
+.logo-desktop {
   display: none;
 }
+
 .navigation-menu {
   margin-top: 24px;
 }
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
-  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
@@ -45,20 +44,18 @@ nav {
 .list-links li {
   margin: 16px 0;
 }
+
 .list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
 }
-.list-links li a.active {
-  text-decoration: underline;
-}
 
-@media screen and (min-width: 768px) {
+@media screen and {
+  min-width: 768px;
   .navigation-menu {
     margin-top: 0;
-    width: 467px;
   }
   .navigation-menu label {
     display: none;
@@ -67,6 +64,7 @@ nav {
   .navigation-menu nav {
     display: block;
   }
+
   .navigation-menu ul {
     display: flex;
     justify-content: space-between;
@@ -79,7 +77,7 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  .main-header {
+  header {
     padding: 38px 120px;
   }
   .logo {
@@ -92,13 +90,15 @@ nav {
   .img-mobile {
     display: none;
   }
-  .navigation-menu a:hover {
-    color: var(--primary-color);
+  .navigation-menu a:hover{
+    color: red;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .main-header {
+@media screen and (min-width: 1920px;) {
+  header {
     padding: 38px 160px;
   }
+}
+  
 }
